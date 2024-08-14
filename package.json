@@ -1,0 +1,47 @@
+{
+  "name": "@muxiu1997/let-also",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "A tiny library inspired by Kotlin, designed for call chaining in JavaScript / TypeScript.",
+  "source": "src/index.ts",
+  "author": "MuXiu1997 <muxiu1997@gmail.com> (https://github.com/MuXiu1997/)",
+  "license": "MIT",
+  "homepage": "https://github.com/MuXiu1997/let-also",
+  "repository": "MuXiu1997/let-also",
+  "keywords": [
+    "let",
+    "also",
+    "chaining",
+    "call chaining"
+  ],
+  "exports": {
+    "types": "./index.d.ts",
+    "module": "./dist/let-also.es.js",
+    "import": "./dist/let-also.es.js",
+    "require": "./dist/let-also.cjs.js",
+    "default": "./dist/let-also.es.js"
+  },
+  "main": "dist/let-also.cjs.js",
+  "module": "dist/let-also.es.js",
+  "jsnext:main": "dist/let-also.es.js",
+  "umd:main": "dist/let-also.umd.js",
+  "typings": "index.d.ts",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "lint": "eslint --fix .",
+    "bundle": "vite build"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.25.1",
+    "@muxiu1997/let-also": "link:./",
+    "@types/node": ">=20.0.0",
+    "eslint": "^9.3.0",
+    "eslint-plugin-format": "^0.1.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0",
+    "vite-plugin-dts": "^4.0.2"
+  }
+}
