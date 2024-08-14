@@ -1,7 +1,7 @@
 {
   "name": "@muxiu1997/let-also",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.1.0-beta.20240815",
   "description": "A tiny library inspired by Kotlin, designed for call chaining in JavaScript / TypeScript.",
   "source": "src/index.ts",
   "author": "MuXiu1997 <muxiu1997@gmail.com> (https://github.com/MuXiu1997/)",
