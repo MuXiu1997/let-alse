@@ -32,16 +32,21 @@
   ],
   "scripts": {
     "lint": "eslint --fix .",
+    "test": "vitest --typecheck",
+    "coverage": "vitest --typecheck --coverage",
     "bundle": "vite build"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.25.1",
+    "@antfu/eslint-config": "^2.26.0",
     "@muxiu1997/let-also": "link:./",
     "@types/node": ">=20.0.0",
+    "@vitest/coverage-v8": "2.0.5",
+    "@vitest/ui": "2.0.5",
     "eslint": "^9.3.0",
-    "eslint-plugin-format": "^0.1.1",
+    "eslint-plugin-format": "^0.1.2",
     "typescript": "^5.5.4",
-    "vite": "^5.4.0",
-    "vite-plugin-dts": "^4.0.2"
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.0.3",
+    "vitest": "2.0.5"
   }
 }

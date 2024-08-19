@@ -149,8 +149,7 @@ export class Wrapped<T> {
 
   /**
    * Gets the wrapped value.
-   * @template T - The type of the wrapped value
-   * @returns {T} The wrapped value
+   * @returns The wrapped value
    */
   get value(): T {
     return this.val
@@ -161,7 +160,7 @@ export class Wrapped<T> {
  * Wraps a value in a Wrapped instance.
  * @template T - The type of the value to wrap
  * @param val - The value to wrap
- * @returns {Wrapped<T>} A Wrapped instance containing the value
+ * @returns A Wrapped instance containing the value
  */
 export function wrap<T>(val: T): Wrapped<T> {
   return new Wrapped(val)

@@ -1,3 +1,4 @@
+/// <reference types="vitest" />
 import path from 'node:path'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
@@ -8,8 +9,8 @@ const libName = name.replace(/^@.*\//, '')
 export default defineConfig({
   resolve: {
     alias: {
-      '~': `${path.resolve(__dirname, 'src')}`,
-      '#': `${path.resolve(__dirname, 'test')}`,
+      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '#/': `${path.resolve(__dirname, 'test')}/`,
     },
   },
   build: {
@@ -28,4 +29,12 @@ export default defineConfig({
       outDir: '.',
     }),
   ],
+  test: {
+    coverage: {
+      enabled: true,
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+      include: ['src/**'],
+    },
+  },
 })
